@@ -1,0 +1,14 @@
+
+_autosave-placa inventors house 1-cache\.lib
+
+_autosave-placa inventors house 1\.pro
+
+gerbers_nfc\.zip
+
+gerbers_nfc/
+
+*.bak
+
+*.sch-bak
+
+*.kicad_pcb-bak

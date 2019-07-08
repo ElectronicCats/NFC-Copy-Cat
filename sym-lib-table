@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name MagSpoofTC-cache)(type Legacy)(uri C:/Users/range/Downloads/magspoof-master/magspoof-master/KiCad-PCB/MagSpoofTC-cache.lib)(options "")(descr ""))
+  (lib (name MagSpoofTC-rescue)(type Legacy)(uri C:/Users/range/Downloads/magspoof-master/magspoof-master/KiCad-PCB/MagSpoofTC-rescue.lib)(options "")(descr ""))
+)
