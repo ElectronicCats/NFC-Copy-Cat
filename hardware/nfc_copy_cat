@@ -1,0 +1,33 @@
+Source:	E:\proyectos ihec\NFC-Copy-Cat\hardware\nfc_copy_cat.sch
+Date:	19/07/2019 05:10:45 p. m.
+Tool:	Eeschema (5.1.2)-2
+Component Count:	28
+Ref	Value	Part	Footprint	Description	Vendor
+C2	0.1uf	Device:C_Small	Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Unpolarized capacitor, small symbol	
+C4	0.1UF	Device:C_Small	Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Unpolarized capacitor, small symbol	
+C5	1uf	Device:C	Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Unpolarized capacitor	
+C6	10uf	Device:C	Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Unpolarized capacitor	
+C7	10uf	Device:C	Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Unpolarized capacitor	
+C8	10uf	Device:C	Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Unpolarized capacitor	
+D1	LED_Small	Device:LED_Small	LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Light emitting diode, small symbol	
+D2	D_Schottky	Device:D_Schottky	Diode_SMD:D_SOD-123	Schottky diode	
+D3	LED	Device:LED	LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Light emitting diode	
+F1	Polyfuse	Device:Polyfuse	Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Resettable fuse, polymeric positive temperature coefficient	
+J1	USB_B_Micro	Connector:USB_B_Micro	Connectors_EC:629105150521	USB Micro Type B connector	
+J2	Screw_Terminal_01x02	Connector:Screw_Terminal_01x02	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J3	Conn_02x02_Counter_Clockwise	Connector_Generic:Conn_02x02_Counter_Clockwise	Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD	Generic connector, double row, 02x02, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)	
+J4	Conn_01x08	Connector_Generic:Conn_01x08	Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical	Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J5	Conn_01x02	Connector_Generic:Conn_01x02	Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical	Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)	
+J6	Conn_01x04	Connector_Generic:Conn_01x04	Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical	Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)	
+R1	330	Device:R_Small	Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Resistor, small symbol	
+R2	1k	Device:R	Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Resistor	
+R3	2.2k	Device:R	Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Resistor	
+SW1	SW_DPST_x2	Switch:SW_DPST_x2	Button_Switch_SMD:SW_SPST_TL3342	Single Pole Single Throw (SPST) switch, separate symbol	
+SW2	SW_DPST_x2	Switch:SW_DPST_x2	Button_Switch_SMD:SW_SPST_TL3342	Single Pole Single Throw (SPST) switch, separate symbol	
+SW3	SW_DPST_x2	Switch:SW_DPST_x2	Button_Switch_SMD:SW_SPST_TL3342	Single Pole Single Throw (SPST) switch, separate symbol	
+U1	AP2112K-3.3TRG1	electroniccats:AP2112K-3.3TRG1	Package_TO_SOT_SMD:SOT-23-5_HandSoldering		
+U2	MCP73831-2-OT	Battery_Management:MCP73831-2-OT	Package_TO_SOT_SMD:SOT-23-5	Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package	
+U3	TC4424	MagSpoofTC-cache:TC4424	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm		
+U4	ATSAMD21E18A	electroniccats:ATSAMD21E18A	Package_QFP:TQFP-32_7x7mm_P0.8mm		
+c1	0.1uf	Device:C_Small	Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Unpolarized capacitor, small symbol	
+c3	0.1uf	Device:C_Small	Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder	Unpolarized capacitor, small symbol	
