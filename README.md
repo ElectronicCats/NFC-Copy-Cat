@@ -5,7 +5,7 @@ NFCopyCat is a device to make replay attacks against NFC payment systems with Ma
 Electronic Cats invests time and resources providing this open source design, please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
 
 <a href="https://electroniccats.com/tienda/">
-  <img src="https://media.discordapp.net/attachments/562297893667471381/619566704372219915/unknown.png?width=441&height=228" width="200" height="104" />
+  <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" width="200" height="104" />
 </a>
 
 Designed by Electronic Cats.
