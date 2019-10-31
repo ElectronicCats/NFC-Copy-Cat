@@ -166,34 +166,34 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x08 J4
 U 1 1 5D10E2FA
-P 2180 6010
-F 0 "J4" H 2260 6002 50  0000 L CNN
-F 1 "Conn_01x08" H 2260 5911 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2180 6010 50  0001 C CNN
-F 3 "~" H 2180 6010 50  0001 C CNN
-	1    2180 6010
+P 1530 5990
+F 0 "J4" H 1500 6390 50  0000 L CNN
+F 1 "NFC Module V3" V 1645 5675 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1530 5990 50  0001 C CNN
+F 3 "~" H 1530 5990 50  0001 C CNN
+	1    1530 5990
 	1    0    0    -1  
 $EndComp
-Text Label 1980 5710 2    50   ~ 0
+Text Label 1330 5690 2    50   ~ 0
 13(SCK)
-Text Label 1980 5810 2    50   ~ 0
+Text Label 1330 5790 2    50   ~ 0
 12(MISO)
-Text Label 1980 5910 2    50   ~ 0
+Text Label 1330 5890 2    50   ~ 0
 11(MOSI)
-Text Label 1980 6010 2    50   ~ 0
+Text Label 1330 5990 2    50   ~ 0
 10(SS)
 $Comp
 L nfc_copy_cat-rescue:GND-MagSpoofTC-cache #PWR014
 U 1 1 5D111E6A
-P 1980 6210
-F 0 "#PWR014" H 1980 5960 50  0001 C CNN
-F 1 "GND" V 1985 6082 50  0000 R CNN
-F 2 "" H 1980 6210 50  0000 C CNN
-F 3 "" H 1980 6210 50  0000 C CNN
-	1    1980 6210
-	0    1    1    0   
+P 915 6245
+F 0 "#PWR014" H 915 5995 50  0001 C CNN
+F 1 "GND" V 920 6117 50  0000 R CNN
+F 2 "" H 915 6245 50  0000 C CNN
+F 3 "" H 915 6245 50  0000 C CNN
+	1    915  6245
+	1    0    0    -1  
 $EndComp
-Text Label 1980 6310 2    50   ~ 0
+Text Label 1330 6290 2    50   ~ 0
 IRQ
 Text Label 10320 2270 0    50   ~ 0
 OUTA
@@ -561,7 +561,7 @@ NoConn ~ 7500 1520
 NoConn ~ 7500 3620
 NoConn ~ 7500 3720
 NoConn ~ 7500 2820
-NoConn ~ 1980 6410
+NoConn ~ 1330 6390
 NoConn ~ 10320 2120
 NoConn ~ 9320 2120
 NoConn ~ 7500 2020
@@ -666,13 +666,13 @@ $EndComp
 $Comp
 L power:+3.3V #PWR013
 U 1 1 5D1101C2
-P 1980 6110
-F 0 "#PWR013" H 1980 5960 50  0001 C CNN
-F 1 "+3.3V" V 1995 6238 50  0000 L CNN
-F 2 "" H 1980 6110 50  0001 C CNN
-F 3 "" H 1980 6110 50  0001 C CNN
-	1    1980 6110
-	0    -1   -1   0   
+P 865 6050
+F 0 "#PWR013" H 865 5900 50  0001 C CNN
+F 1 "+3.3V" V 880 6178 50  0000 L CNN
+F 2 "" H 865 6050 50  0001 C CNN
+F 3 "" H 865 6050 50  0001 C CNN
+	1    865  6050
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2975 2625 2825 2625
@@ -1019,4 +1019,74 @@ $EndComp
 Wire Wire Line
 	4870 1510 4870 1440
 Connection ~ 4870 1510
+$Comp
+L Connector_Generic:Conn_01x09 J?
+U 1 1 5DBA44BD
+P 2980 6060
+F 0 "J?" H 2950 6575 50  0000 L CNN
+F 1 "Adafruit NFC 1.0" V 3100 5725 50  0000 L CNN
+F 2 "" H 2980 6060 50  0001 C CNN
+F 3 "~" H 2980 6060 50  0001 C CNN
+	1    2980 6060
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2780 5660 2605 5660
+Wire Wire Line
+	2780 5760 2615 5760
+Wire Wire Line
+	2780 5860 2620 5860
+Wire Wire Line
+	2780 5960 2625 5960
+Wire Wire Line
+	2780 6060 2630 6060
+Wire Wire Line
+	2780 6160 2630 6160
+Wire Wire Line
+	2780 6260 2630 6260
+Wire Wire Line
+	2780 6360 2635 6360
+Text Label 2615 5760 2    50   ~ 0
+SCK
+Text Label 2620 5860 2    50   ~ 0
+MISO
+Text Label 2630 6060 2    50   ~ 0
+SS
+Text Label 2630 6160 2    50   ~ 0
+RSTOUT
+Text Label 2630 6260 2    50   ~ 0
+IRQ
+Text Label 2625 5960 2    50   ~ 0
+MOSI
+NoConn ~ 2780 6460
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DBC5E82
+P 2605 5660
+F 0 "#PWR?" H 2605 5510 50  0001 C CNN
+F 1 "+3.3V" H 2620 5833 50  0000 C CNN
+F 2 "" H 2605 5660 50  0001 C CNN
+F 3 "" H 2605 5660 50  0001 C CNN
+	1    2605 5660
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DBC73AB
+P 2635 6360
+F 0 "#PWR?" H 2635 6110 50  0001 C CNN
+F 1 "GND" H 2640 6187 50  0000 C CNN
+F 2 "" H 2635 6360 50  0001 C CNN
+F 3 "" H 2635 6360 50  0001 C CNN
+	1    2635 6360
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1330 6090 865  6090
+Wire Wire Line
+	865  6090 865  6050
+Wire Wire Line
+	1330 6190 915  6190
+Wire Wire Line
+	915  6190 915  6245
 $EndSCHEMATC
