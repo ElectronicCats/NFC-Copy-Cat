@@ -1,16 +1,16 @@
 EESchema Schematic File Version 4
 LIBS:nfc_copy_cat-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "NFC Copy Cat"
-Date "2019-10-30"
-Rev "1.1v"
-Comp "electronic cats"
+Date "2019-11-15"
+Rev "1.2v"
+Comp "Electronic Cats"
 Comment1 ""
-Comment2 ""
+Comment2 "Eduardo Contreras"
 Comment3 "Andres Sabas"
 Comment4 "Juan Eduardo Rangel Macias "
 $EndDescr
@@ -31,7 +31,7 @@ U 1 1 5D106D67
 P 880 1080
 F 0 "J1" H 937 1547 50  0000 C CNN
 F 1 "USB_B_Micro" H 937 1456 50  0000 C CNN
-F 2 "Connectors_EC:629105150521" H 1030 1030 50  0001 C CNN
+F 2 "Connectors:U254051N4BH806" H 1030 1030 50  0001 C CNN
 F 3 "~" H 1030 1030 50  0001 C CNN
 	1    880  1080
 	1    0    0    -1  
@@ -517,9 +517,7 @@ Wire Wire Line
 Wire Wire Line
 	2100 3820 2180 3820
 Wire Wire Line
-	2180 3820 2180 4250
-Text Label 2180 4170 0    50   ~ 0
-BAT
+	2180 3820 2180 4175
 Wire Wire Line
 	1700 3410 1520 3410
 Wire Wire Line
@@ -583,7 +581,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 1720 7550 1720
 $Comp
-L electroniccats:ATSAMD21E18A U4
+L nfc_copy_cat-rescue:ATSAMD21E18A-electroniccats U4
 U 1 1 5D120B36
 P 6100 2720
 F 0 "U4" H 6465 4574 45  0000 C CNN
@@ -1020,10 +1018,10 @@ Wire Wire Line
 	4870 1510 4870 1440
 Connection ~ 4870 1510
 $Comp
-L Connector_Generic:Conn_01x09 J?
+L Connector_Generic:Conn_01x09 J6
 U 1 1 5DBA44BD
 P 2980 6060
-F 0 "J?" H 2950 6575 50  0000 L CNN
+F 0 "J6" H 2950 6575 50  0000 L CNN
 F 1 "Adafruit NFC 1.0" V 3100 5725 50  0000 L CNN
 F 2 "" H 2980 6060 50  0001 C CNN
 F 3 "~" H 2980 6060 50  0001 C CNN
@@ -1060,10 +1058,10 @@ Text Label 2625 5960 2    50   ~ 0
 MOSI
 NoConn ~ 2780 6460
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0101
 U 1 1 5DBC5E82
 P 2605 5660
-F 0 "#PWR?" H 2605 5510 50  0001 C CNN
+F 0 "#PWR0101" H 2605 5510 50  0001 C CNN
 F 1 "+3.3V" H 2620 5833 50  0000 C CNN
 F 2 "" H 2605 5660 50  0001 C CNN
 F 3 "" H 2605 5660 50  0001 C CNN
@@ -1071,10 +1069,10 @@ F 3 "" H 2605 5660 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 5DBC73AB
 P 2635 6360
-F 0 "#PWR?" H 2635 6110 50  0001 C CNN
+F 0 "#PWR0102" H 2635 6110 50  0001 C CNN
 F 1 "GND" H 2640 6187 50  0000 C CNN
 F 2 "" H 2635 6360 50  0001 C CNN
 F 3 "" H 2635 6360 50  0001 C CNN
@@ -1089,4 +1087,22 @@ Wire Wire Line
 	1330 6190 915  6190
 Wire Wire Line
 	915  6190 915  6245
+$Comp
+L power:+BATT #PWR0103
+U 1 1 5DD5BE11
+P 2620 4140
+F 0 "#PWR0103" H 2620 3990 50  0001 C CNN
+F 1 "+BATT" H 2635 4313 50  0000 C CNN
+F 2 "" H 2620 4140 50  0001 C CNN
+F 3 "" H 2620 4140 50  0001 C CNN
+	1    2620 4140
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2620 4140 2620 4175
+Wire Wire Line
+	2620 4175 2180 4175
+Connection ~ 2180 4175
+Wire Wire Line
+	2180 4175 2180 4250
 $EndSCHEMATC
