@@ -821,17 +821,6 @@ Text Label 7500 2720 0    50   ~ 0
 LED1
 Text Label 5770 5320 0    50   ~ 0
 LED1
-$Comp
-L Connector:Conn_01x04_Male J3
-U 1 1 5DBA59FC
-P 4545 3290
-F 0 "J3" V 4607 3434 50  0000 L CNN
-F 1 "SWD" V 4698 3434 50  0000 L CNN
-F 2 "" H 4545 3290 50  0001 C CNN
-F 3 "~" H 4545 3290 50  0001 C CNN
-	1    4545 3290
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4645 3490 4645 3535
 Wire Wire Line
@@ -1023,60 +1012,32 @@ U 1 1 5DBA44BD
 P 2980 6060
 F 0 "J6" H 2950 6575 50  0000 L CNN
 F 1 "Adafruit NFC 1.0" V 3100 5725 50  0000 L CNN
-F 2 "" H 2980 6060 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 2980 6060 50  0001 C CNN
 F 3 "~" H 2980 6060 50  0001 C CNN
 	1    2980 6060
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2780 5660 2605 5660
-Wire Wire Line
-	2780 5760 2615 5760
-Wire Wire Line
-	2780 5860 2620 5860
-Wire Wire Line
-	2780 5960 2625 5960
-Wire Wire Line
-	2780 6060 2630 6060
-Wire Wire Line
-	2780 6160 2630 6160
-Wire Wire Line
-	2780 6260 2630 6260
-Wire Wire Line
-	2780 6360 2635 6360
-Text Label 2615 5760 2    50   ~ 0
-SCK
-Text Label 2620 5860 2    50   ~ 0
-MISO
-Text Label 2630 6060 2    50   ~ 0
-SS
-Text Label 2630 6160 2    50   ~ 0
+Text Label 2780 6360 2    50   ~ 0
+13(SCK)
+Text Label 2780 6260 2    50   ~ 0
+12(MISO)
+Text Label 2780 6060 2    50   ~ 0
+10(SS)
+Text Label 2780 5960 2    50   ~ 0
 RSTOUT
-Text Label 2630 6260 2    50   ~ 0
+Text Label 2780 5860 2    50   ~ 0
 IRQ
-Text Label 2625 5960 2    50   ~ 0
-MOSI
-NoConn ~ 2780 6460
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 5DBC5E82
-P 2605 5660
-F 0 "#PWR0101" H 2605 5510 50  0001 C CNN
-F 1 "+3.3V" H 2620 5833 50  0000 C CNN
-F 2 "" H 2605 5660 50  0001 C CNN
-F 3 "" H 2605 5660 50  0001 C CNN
-	1    2605 5660
-	1    0    0    -1  
-$EndComp
+Text Label 2780 6160 2    50   ~ 0
+11(MOSI)
 $Comp
 L power:GND #PWR0102
 U 1 1 5DBC73AB
-P 2635 6360
-F 0 "#PWR0102" H 2635 6110 50  0001 C CNN
-F 1 "GND" H 2640 6187 50  0000 C CNN
-F 2 "" H 2635 6360 50  0001 C CNN
-F 3 "" H 2635 6360 50  0001 C CNN
-	1    2635 6360
+P 2430 5765
+F 0 "#PWR0102" H 2430 5515 50  0001 C CNN
+F 1 "GND" H 2435 5592 50  0000 C CNN
+F 2 "" H 2430 5765 50  0001 C CNN
+F 3 "" H 2430 5765 50  0001 C CNN
+	1    2430 5765
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1105,4 +1066,33 @@ Wire Wire Line
 Connection ~ 2180 4175
 Wire Wire Line
 	2180 4175 2180 4250
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5DBC5E82
+P 2555 6460
+F 0 "#PWR0101" H 2555 6310 50  0001 C CNN
+F 1 "+3.3V" H 2570 6633 50  0000 C CNN
+F 2 "" H 2555 6460 50  0001 C CNN
+F 3 "" H 2555 6460 50  0001 C CNN
+	1    2555 6460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2555 6460 2780 6460
+Wire Wire Line
+	2430 5765 2430 5760
+Wire Wire Line
+	2430 5760 2780 5760
+NoConn ~ 2780 5660
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 5DBA59FC
+P 4545 3290
+F 0 "J3" V 4607 3434 50  0000 L CNN
+F 1 "SWD" V 4698 3434 50  0000 L CNN
+F 2 "" H 4545 3290 50  0001 C CNN
+F 3 "~" H 4545 3290 50  0001 C CNN
+	1    4545 3290
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
