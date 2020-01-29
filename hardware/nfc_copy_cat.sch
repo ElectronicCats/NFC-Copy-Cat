@@ -548,7 +548,7 @@ F 3 "https://www.mouser.mx/datasheet/2/268/SAM-D21-Family-Datasheet-DS40001882C-
 	1    0    0    -1  
 $EndComp
 $Comp
-L electroniccats:AP2112K-3.3TRG1 U1
+L nfc_copy_cat-rescue:AP2112K-3.3TRG1-electroniccats U1
 U 1 1 5D11FC1B
 P 2325 2825
 F 0 "U1" H 2325 3295 50  0000 C CNN
@@ -1041,7 +1041,7 @@ U 1 1 5DBA59FC
 P 4545 3290
 F 0 "J3" V 4607 3434 50  0000 L CNN
 F 1 "SWD" V 4698 3434 50  0000 L CNN
-F 2 "" H 4545 3290 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4545 3290 50  0001 C CNN
 F 3 "~" H 4545 3290 50  0001 C CNN
 	1    4545 3290
 	0    1    1    0   
@@ -1106,7 +1106,7 @@ U 1 1 5E35B8A2
 P 6105 5845
 F 0 "C3" H 6220 5891 50  0000 L CNN
 F 1 "0.1uF" H 6220 5800 50  0000 L CNN
-F 2 "" H 6143 5695 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6143 5695 50  0001 C CNN
 F 3 "~" H 6105 5845 50  0001 C CNN
 	1    6105 5845
 	1    0    0    -1  
@@ -1188,7 +1188,7 @@ U 1 1 5E31C604
 P 4085 5580
 F 0 "R7" H 4155 5626 50  0000 L CNN
 F 1 "100K" H 4125 5550 50  0000 L CNN
-F 2 "" V 4015 5580 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4015 5580 50  0001 C CNN
 F 3 "~" H 4085 5580 50  0001 C CNN
 	1    4085 5580
 	1    0    0    -1  
