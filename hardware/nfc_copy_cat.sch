@@ -81,17 +81,6 @@ Text Label 7550 3120 0    50   ~ 0
 Text Label 7550 3220 0    50   ~ 0
 12(MISO)
 $Comp
-L Device:C_Small C4
-U 1 1 5D11FCB0
-P 10620 2470
-F 0 "C4" H 10712 2516 50  0000 L CNN
-F 1 "0.1uf" H 10712 2425 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10620 2470 50  0001 C CNN
-F 3 "~" H 10620 2470 50  0001 C CNN
-	1    10620 2470
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x02 J5
 U 1 1 5D12051B
 P 9855 1120
@@ -192,28 +181,6 @@ Text Label 9655 1220 2    50   ~ 0
 OUTB
 Text Label 9320 2270 2    50   ~ 0
 IN_A
-$Comp
-L power:+3.3V #PWR019
-U 1 1 5D10F76C
-P 10620 2370
-F 0 "#PWR019" H 10620 2220 50  0001 C CNN
-F 1 "+3.3V" H 10635 2543 50  0000 C CNN
-F 2 "" H 10620 2370 50  0001 C CNN
-F 3 "" H 10620 2370 50  0001 C CNN
-	1    10620 2370
-	1    0    0    -1  
-$EndComp
-$Comp
-L nfc_copy_cat-rescue:GND-MagSpoofTC-cache #PWR020
-U 1 1 5D11661F
-P 10620 2570
-F 0 "#PWR020" H 10620 2320 50  0001 C CNN
-F 1 "GND" H 10625 2397 50  0000 C CNN
-F 2 "" H 10620 2570 50  0000 C CNN
-F 3 "" H 10620 2570 50  0000 C CNN
-	1    10620 2570
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Polyfuse F1
 U 1 1 5D119569
@@ -1061,11 +1028,6 @@ F 3 "" H 5645 5985 50  0001 C CNN
 	1    5645 5985
 	1    0    0    -1  
 $EndComp
-Connection ~ 10620 2370
-Wire Wire Line
-	10320 2370 10620 2370
-Wire Wire Line
-	10320 2420 10320 2370
 $Comp
 L nfc_copy_cat-rescue:GND-MagSpoofTC-cache #PWR016
 U 1 1 5D10F11B
@@ -1079,8 +1041,6 @@ F 3 "" H 9320 2420 50  0000 C CNN
 $EndComp
 Text Label 9320 2570 2    50   ~ 0
 IN_B
-Text Label 10320 2570 0    50   ~ 0
-OUTB
 $Comp
 L nfc_copy_cat-rescue:TC4424-MagSpoofTC-cache U3
 U 1 1 5D103460
@@ -1229,4 +1189,56 @@ Connection ~ 1700 3410
 Wire Wire Line
 	1700 3410 2310 3410
 NoConn ~ 2780 5960
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E3E4F66
+P 10820 2595
+F 0 "#PWR?" H 10820 2445 50  0001 C CNN
+F 1 "+3.3V" H 10835 2768 50  0000 C CNN
+F 2 "" H 10820 2595 50  0001 C CNN
+F 3 "" H 10820 2595 50  0001 C CNN
+	1    10820 2595
+	1    0    0    -1  
+$EndComp
+Text Label 10320 2570 0    50   ~ 0
+OUTB
+$Comp
+L nfc_copy_cat-rescue:GND-MagSpoofTC-cache #PWR020
+U 1 1 5D11661F
+P 10820 2870
+F 0 "#PWR020" H 10820 2620 50  0001 C CNN
+F 1 "GND" H 10825 2697 50  0000 C CNN
+F 2 "" H 10820 2870 50  0000 C CNN
+F 3 "" H 10820 2870 50  0000 C CNN
+	1    10820 2870
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR019
+U 1 1 5D10F76C
+P 10620 2370
+F 0 "#PWR019" H 10620 2220 50  0001 C CNN
+F 1 "+3.3V" H 10635 2543 50  0000 C CNN
+F 2 "" H 10620 2370 50  0001 C CNN
+F 3 "" H 10620 2370 50  0001 C CNN
+	1    10620 2370
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5D11FCB0
+P 10820 2770
+F 0 "C4" H 10912 2816 50  0000 L CNN
+F 1 "0.1uf" H 10912 2725 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10820 2770 50  0001 C CNN
+F 3 "~" H 10820 2770 50  0001 C CNN
+	1    10820 2770
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10820 2670 10820 2595
+Wire Wire Line
+	10320 2420 10620 2420
+Wire Wire Line
+	10620 2420 10620 2370
 $EndSCHEMATC
