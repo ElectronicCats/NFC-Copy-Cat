@@ -1,17 +1,35 @@
+/************************************************************
+  NFC Copy Cat
+  by Salvador Mendoza (salmg.net)
+  for Electronic Cats
+   
+  This example demonstrates how to use NFC Copy Cat by Electronic Cats
+  https://github.com/ElectronicCats/magspoof
+  
+  Development environment specifics:
+  IDE: Arduino 1.8.9
+  Hardware Platform:
+  NFC Copy Cat
+  - SAMD21E
+  
+  This code is beerware; if you see me (or any other Electronic Cats
+  member) at the local, and you've found our code helpful,
+  please buy us a round!
+  Distributed as-is; no warranty is given.
+*/
 #include <Wire.h>
 #include <SPI.h>
 #include <Adafruit_PN532.h>
 
-#define PN532_SCK  (13)
-#define PN532_MOSI (11)
-#define PN532_SS   (10)
-#define PN532_MISO (12)
+#define PN532_SCK  (17)
+#define PN532_MOSI (16)
+#define PN532_SS   (18)
+#define PN532_MISO (19)
 
 #define PN532_IRQ   (2)
 #define PN532_RESET (3)
 
 Adafruit_PN532 nfc(PN532_SCK, PN532_MISO, PN532_MOSI, PN532_SS);
-
 
 #if defined(ARDUINO_ARCH_SAMD)
    #define Serial SerialUSB
