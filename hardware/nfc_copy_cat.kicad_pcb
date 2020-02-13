@@ -10,6 +10,15 @@
   )
 
   (page A4)
+  (title_block
+    (title "NFC Copy Cat")
+    (date 2020-02-13)
+    (rev 1.3)
+    (company "Electronic Cats ")
+    (comment 1 "Juan Eduardo Rangel")
+    (comment 2 "Montserrat Figueroa")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
