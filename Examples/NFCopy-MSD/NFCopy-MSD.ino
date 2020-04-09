@@ -134,7 +134,7 @@ void runTarget(){ //Target emulation mode using a pre-saved token
   delay(1000);  
 }
 
-void nfcbutton(){ // Activate emulatio process
+void nfcbutton(){ // Activate emulation process
   if (digitalRead(NPIN) == 0){
     blink(L2, 150, 1);
     Serial.println("Activating NFC...");      
