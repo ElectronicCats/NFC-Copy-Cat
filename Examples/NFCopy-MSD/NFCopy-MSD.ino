@@ -80,6 +80,23 @@ void blink(int pin, int msdelay, int times){
   }
 }
 
+void printData(uint8_t* buff, uint8_t lenbuffer, bool cmd){
+  char tmp[1];
+  
+  if (cmd)
+    Serial.print("Reader command: ");
+  else
+    Serial.print("\nNFC Copy Cat answer: ");
+  
+  for (uint8_t u = 0; u < lenbuffer; u++) {
+    sprintf(tmp, "0x%.2X",buff[u]);
+    Serial.print(tmp); Serial.print(" ");
+  }
+  
+  if (!cmd)
+    Serial.println("\n-----");
+}
+
 void runTarget(){ //Target emulation mode using a pre-saved token
   bool success;
   uint8_t apdubuffer[255]= {}, apdulen;
@@ -102,9 +119,13 @@ void runTarget(){ //Target emulation mode using a pre-saved token
   nfc.AsTarget();
   success = nfc.getDataTarget(apdubuffer, &apdulen);
   if (apdulen){
+    printData(apdubuffer, apdulen, true);
     for (uint8_t i = 0; i < 6; i++){
       nfc.setDataTarget(apdus[i], apdusLen[i]);
+      printData(apdus[i], apdusLen[i], false);
+      
       nfc.getDataTarget(apdubuffer, &apdulen);
+      printData(apdubuffer, apdulen, true);
     }
     Serial.println("Emulated!");
   }
