@@ -2,6 +2,9 @@
 
 NFCopyCat is a device to make replay attacks against NFC payment systems with Magspoof. This tiny version is a combination of SAMD21 and a small PN532 board. Adding a 3.7 LiPo battery. Also I added a LED with a resistor just for debugging and to show activity.
 
+# DISCLAIMER
+The NFC Copy Cat is a wireless penetration testing tool for use in authorized security audits where permitted. Check laws and obtain permission before using. Electronic Cats and Salvador Mendoza claim no responsibility for unauthorized use or damages.
+
 Electronic Cats invests time and resources providing this open source design, please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
 
 <a href="https://electroniccats.com/store/">
@@ -9,6 +12,8 @@ Electronic Cats invests time and resources providing this open source design, pl
 </a>
 
 Designed by Electronic Cats.
+
+## License
 
 Firmware released under an GNU AGPL v3.0 license. See the LICENSE file for more information.
 
