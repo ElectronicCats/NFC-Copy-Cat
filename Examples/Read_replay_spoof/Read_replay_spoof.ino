@@ -439,7 +439,7 @@ void seekTrack2(){ //Find Track 2 in the NFC reading transaction
           if (apdubuffer[u] == 0x57 && apdubuffer[u+1] == 0x13 && !chktoken){
             chktoken = true;
             memcpy(&token, &apdubuffer[u+2], 19);
-            //break;
+            break;
           }
         }
       }
@@ -507,7 +507,7 @@ void magbutton(){ // Run MagSpoof using tracks from code or from NFC reading
     blink(L3, 150, 1);
     Serial.println("Activating MagSpoof...");
     if(tokenString.length() > 0){
-      Serial.println("Using MagStripe data from memoria");
+      Serial.println("Using MagStripe data from memory");
       playTrack(2);
     }
     else
