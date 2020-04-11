@@ -25,14 +25,15 @@ Some of the code examples that will be available introduce different concepts. F
 - NFC Copy Cat
 - Coil for Magspoof
 
-# DISCLAIMER
-The NFC Copy Cat is a wireless penetration testing tool for use in authorized security audits where permitted. Check laws and obtain permission before using. Electronic Cats and Salvador Mendoza claim no responsibility for unauthorized use or damages.
-
-Electronic Cats invests time and resources providing this open source design, please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
-
-<a href="https://electroniccats.com/store/">
+<a href="https://electroniccats.com/store/nfc-copy-cat/">
   <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" width="200" height="104" />
 </a>
+
+# DISCLAIMER
+T
+he NFC Copy Cat is a wireless penetration testing tool for use in authorized security audits where permitted. Check laws and obtain permission before using. Electronic Cats and Salvador Mendoza claim no responsibility for unauthorized use or damages.
+
+Electronic Cats invests time and resources providing this open source design, please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
 
 Designed by Electronic Cats.
 
