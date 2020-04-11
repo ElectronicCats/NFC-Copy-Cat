@@ -107,7 +107,7 @@ void setup(){
   uint32_t versiondata = nfc.getFirmwareVersion();
   if (! versiondata) {
     Serial.print("Didn't find PN53x board");
-    //while (1); // halt
+    while (1); // halt
   }
 
   // blink to show we started up
