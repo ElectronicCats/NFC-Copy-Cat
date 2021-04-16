@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "NFC Copy Cat"
 Date "2021-04-16"
-Rev "1.3v"
+Rev "1.5v"
 Comp "Electronic Cats"
 Comment1 ""
 Comment2 "Eduardo Contreras"
@@ -67,9 +67,9 @@ Text Label 5380 1220 2    50   ~ 0
 RESET
 Wire Wire Line
 	5380 1220 5430 1220
-Text Label 7610 2220 0    50   ~ 0
+Text Label 7550 1720 0    50   ~ 0
 IN_A
-Text Label 7605 2320 0    50   ~ 0
+Text Label 7550 1820 0    50   ~ 0
 IN_B
 Text Label 7550 2920 0    50   ~ 0
 11(MOSI)
@@ -831,9 +831,9 @@ Wire Wire Line
 	8055 5845 8055 5895
 Text Label 8055 5345 0    50   ~ 0
 LED3
-Text Label 7600 2020 0    50   ~ 0
+Text Label 7560 1520 0    50   ~ 0
 LED3
-Text Label 7610 2120 0    50   ~ 0
+Text Label 7555 1620 0    50   ~ 0
 LED2
 Wire Wire Line
 	5430 1790 5315 1790
@@ -994,13 +994,13 @@ F 3 "" H 9820 2370 60  0000 C CNN
 	1    9820 2370
 	1    0    0    -1  
 $EndComp
-Text Label 7560 1520 0    50   ~ 0
+Text Label 7600 2020 0    50   ~ 0
 MOSI1
-Text Label 7555 1620 0    50   ~ 0
+Text Label 7610 2120 0    50   ~ 0
 SCK1
-Text Label 7550 1720 0    50   ~ 0
+Text Label 7610 2220 0    50   ~ 0
 SS1
-Text Label 7550 1820 0    50   ~ 0
+Text Label 7605 2320 0    50   ~ 0
 MISO1
 $Comp
 L Device:C C3
