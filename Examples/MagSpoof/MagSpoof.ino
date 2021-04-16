@@ -65,7 +65,7 @@ void setup(){
   pinMode(L3, OUTPUT);
   pinMode(MPIN, INPUT_PULLUP);
     
-  Serial.begin(115200);
+  Serial.begin(9600);
   //while(!Serial){}
   Serial.println("Hello!");
 
@@ -170,7 +170,6 @@ void playTrack(int track){
 
   digitalWrite(PIN_A, LOW);
   digitalWrite(PIN_B, LOW);
-  //digitalWrite(ENABLE_PIN, LOW);
 
 }
 
