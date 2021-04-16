@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:nfc_copy_cat-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "NFC Copy Cat"
-Date "2019-11-15"
-Rev "1.2v"
+Date "2021-04-16"
+Rev "1.3v"
 Comp "Electronic Cats"
 Comment1 ""
 Comment2 "Eduardo Contreras"
@@ -15,7 +14,7 @@ Comment3 "Andres Sabas"
 Comment4 "Juan Eduardo Rangel Macias "
 $EndDescr
 $Comp
-L Connector:USB_B_Micro J1
+L nfc_copy_cat-rescue:USB_B_Micro-Connector J1
 U 1 1 5D106D67
 P 880 1080
 F 0 "J1" H 937 1547 50  0000 C CNN
@@ -68,9 +67,9 @@ Text Label 5380 1220 2    50   ~ 0
 RESET
 Wire Wire Line
 	5380 1220 5430 1220
-Text Label 7550 1720 0    50   ~ 0
+Text Label 7610 2220 0    50   ~ 0
 IN_A
-Text Label 7550 1820 0    50   ~ 0
+Text Label 7605 2320 0    50   ~ 0
 IN_B
 Text Label 7550 2920 0    50   ~ 0
 11(MOSI)
@@ -91,56 +90,6 @@ F 3 "~" H 9855 1120 50  0001 C CNN
 	1    9855 1120
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:LED_Small D1
-U 1 1 5D1211D3
-P 3290 1030
-F 0 "D1" V 3336 962 50  0000 R CNN
-F 1 "POWER" V 3245 962 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3290 1030 50  0001 C CNN
-F 3 "~" V 3290 1030 50  0001 C CNN
-	1    3290 1030
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 5D122FF1
-P 3290 1280
-F 0 "R1" H 3349 1326 50  0000 L CNN
-F 1 "330" H 3349 1235 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3290 1280 50  0001 C CNN
-F 3 "~" H 3290 1280 50  0001 C CNN
-	1    3290 1280
-	1    0    0    -1  
-$EndComp
-$Comp
-L nfc_copy_cat-rescue:GND-MagSpoofTC-cache #PWR018
-U 1 1 5D1235CB
-P 3290 1430
-F 0 "#PWR018" H 3290 1180 50  0001 C CNN
-F 1 "GND" H 3295 1257 50  0000 C CNN
-F 2 "" H 3290 1430 50  0000 C CNN
-F 3 "" H 3290 1430 50  0000 C CNN
-	1    3290 1430
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR017
-U 1 1 5D123E1A
-P 3290 880
-F 0 "#PWR017" H 3290 730 50  0001 C CNN
-F 1 "+3.3V" H 3305 1053 50  0000 C CNN
-F 2 "" H 3290 880 50  0001 C CNN
-F 3 "" H 3290 880 50  0001 C CNN
-	1    3290 880 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3290 880  3290 930 
-Wire Wire Line
-	3290 1130 3290 1180
-Wire Wire Line
-	3290 1380 3290 1430
 $Comp
 L Connector_Generic:Conn_01x08 J4
 U 1 1 5D10E2FA
@@ -302,38 +251,38 @@ L Device:C_Small C1
 U 1 1 5D1030E9
 P 5315 1905
 F 0 "C1" H 5407 1951 50  0000 L CNN
-F 1 "0.1uf" H 5407 1860 50  0000 L CNN
+F 1 "1uf" H 5407 1860 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5315 1905 50  0001 C CNN
 F 3 "~" H 5315 1905 50  0001 C CNN
 	1    5315 1905
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2210 1400 2210 1450
+	3460 1370 3460 1420
 $Comp
 L nfc_copy_cat-rescue:GND-MagSpoofTC-cache #PWR08
 U 1 1 5D116DE8
-P 2210 1450
-F 0 "#PWR08" H 2210 1200 50  0001 C CNN
-F 1 "GND" H 2215 1277 50  0000 C CNN
-F 2 "" H 2210 1450 50  0000 C CNN
-F 3 "" H 2210 1450 50  0000 C CNN
-	1    2210 1450
+P 3460 1420
+F 0 "#PWR08" H 3460 1170 50  0001 C CNN
+F 1 "GND" H 3465 1247 50  0000 C CNN
+F 2 "" H 3460 1420 50  0000 C CNN
+F 3 "" H 3460 1420 50  0000 C CNN
+	1    3460 1420
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2210 900  2210 1000
-Text Label 2210 900  1    50   ~ 0
+	3460 870  3460 970 
+Text Label 3460 870  1    50   ~ 0
 RESET
 $Comp
 L nfc_copy_cat-rescue:SW_DPST_x2-Switch SW1
 U 1 1 5D1166AC
-P 2210 1200
-F 0 "SW1" H 2210 1435 50  0000 C CNN
-F 1 "RST" H 2210 1344 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 2210 1200 50  0001 C CNN
-F 3 "~" H 2210 1200 50  0001 C CNN
-	1    2210 1200
+P 3460 1170
+F 0 "SW1" H 3460 1405 50  0000 C CNN
+F 1 "RST" H 3460 1314 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 3460 1170 50  0001 C CNN
+F 3 "~" H 3460 1170 50  0001 C CNN
+	1    3460 1170
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
@@ -346,23 +295,23 @@ Wire Wire Line
 $Comp
 L Device:D_Schottky D2
 U 1 1 5D130FF3
-P 1785 2475
-F 0 "D2" H 1785 2691 50  0000 C CNN
-F 1 "MBR120" H 1860 2590 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 1785 2475 50  0001 C CNN
-F 3 "~" H 1785 2475 50  0001 C CNN
-	1    1785 2475
+P 1475 2475
+F 0 "D2" H 1475 2691 50  0000 C CNN
+F 1 "MBR120" H 1550 2590 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 1475 2475 50  0001 C CNN
+F 3 "~" H 1475 2475 50  0001 C CNN
+	1    1475 2475
 	0    -1   -1   0   
 $EndComp
 $Comp
 L nfc_copy_cat-rescue:GND-MagSpoofTC-cache #PWR022
 U 1 1 5D13A5F9
-P 810 3745
-F 0 "#PWR022" H 810 3495 50  0001 C CNN
-F 1 "GND" H 815 3572 50  0000 C CNN
-F 2 "" H 810 3745 50  0000 C CNN
-F 3 "" H 810 3745 50  0000 C CNN
-	1    810  3745
+P 1255 3025
+F 0 "#PWR022" H 1255 2775 50  0001 C CNN
+F 1 "GND" H 1260 2852 50  0000 C CNN
+F 2 "" H 1255 3025 50  0000 C CNN
+F 3 "" H 1255 3025 50  0000 C CNN
+	1    1255 3025
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -423,12 +372,12 @@ $EndComp
 $Comp
 L Device:C C8
 U 1 1 5D13D233
-P 810 3595
-F 0 "C8" H 925 3641 50  0000 L CNN
-F 1 "10uf" H 925 3550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 848 3445 50  0001 C CNN
-F 3 "~" H 810 3595 50  0001 C CNN
-	1    810  3595
+P 1255 2875
+F 0 "C8" H 1370 2921 50  0000 L CNN
+F 1 "10uf" H 1370 2830 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1293 2725 50  0001 C CNN
+F 3 "~" H 1255 2875 50  0001 C CNN
+	1    1255 2875
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -535,12 +484,12 @@ Wire Wire Line
 $Comp
 L nfc_copy_cat-rescue:VCC-MagSpoofTC-cache #PWR06
 U 1 1 5D11AC9C
-P 1480 880
-F 0 "#PWR06" H 1480 730 50  0001 C CNN
-F 1 "VCC" V 1497 1008 50  0000 L CNN
-F 2 "" H 1480 880 50  0000 C CNN
-F 3 "" H 1480 880 50  0000 C CNN
-	1    1480 880 
+P 2450 820
+F 0 "#PWR06" H 2450 670 50  0001 C CNN
+F 1 "VCC" V 2467 948 50  0000 L CNN
+F 2 "" H 2450 820 50  0000 C CNN
+F 3 "" H 2450 820 50  0000 C CNN
+	1    2450 820 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -570,17 +519,15 @@ F 3 "" H 2975 2525 50  0001 C CNN
 	1    2975 2525
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	810  3365 810  3410
 $Comp
 L nfc_copy_cat-rescue:VCC-MagSpoofTC-cache #PWR021
 U 1 1 5D139EE0
-P 810 3365
-F 0 "#PWR021" H 810 3215 50  0001 C CNN
-F 1 "VCC" H 827 3538 50  0000 C CNN
-F 2 "" H 810 3365 50  0000 C CNN
-F 3 "" H 810 3365 50  0000 C CNN
-	1    810  3365
+P 1700 3410
+F 0 "#PWR021" H 1700 3260 50  0001 C CNN
+F 1 "VCC" H 1717 3583 50  0000 C CNN
+F 2 "" H 1700 3410 50  0000 C CNN
+F 3 "" H 1700 3410 50  0000 C CNN
+	1    1700 3410
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -596,24 +543,19 @@ F 3 "" H 865 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2975 2625 2825 2625
-Wire Wire Line
-	1785 2625 1825 2625
-Connection ~ 1785 2625
 Connection ~ 1675 2625
-Wire Wire Line
-	1675 2625 1785 2625
 Connection ~ 1575 2625
 Wire Wire Line
 	1575 2625 1475 2625
 $Comp
 L nfc_copy_cat-rescue:VCC-MagSpoofTC-cache #PWR01
 U 1 1 5D1207A7
-P 1475 2625
-F 0 "#PWR01" H 1475 2475 50  0001 C CNN
-F 1 "VCC" V 1493 2752 50  0000 L CNN
-F 2 "" H 1475 2625 50  0000 C CNN
-F 3 "" H 1475 2625 50  0000 C CNN
-	1    1475 2625
+P 1200 2550
+F 0 "#PWR01" H 1200 2400 50  0001 C CNN
+F 1 "VCC" V 1218 2677 50  0000 L CNN
+F 2 "" H 1200 2550 50  0000 C CNN
+F 3 "" H 1200 2550 50  0000 C CNN
+	1    1200 2550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -632,7 +574,7 @@ L Battery_Management:MCP73831-2-OT U2
 U 1 1 5D138B32
 P 1700 3920
 F 0 "U2" H 1700 4401 50  0000 C CNN
-F 1 "MCP73831-2-OT" H 1700 4310 50  0000 C CNN
+F 1 "MCP73831-2-OT" H 1675 4175 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1750 3670 50  0001 L CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 1550 3870 50  0001 C CNN
 	1    1700 3920
@@ -765,7 +707,7 @@ Text Notes 5905 685  0    79   ~ 0
 MICROCONTROLLER
 Text Notes 9820 705  0    79   ~ 0
 COIL
-Text Notes 1560 2025 0    79   ~ 0
+Text Notes 1250 2025 0    79   ~ 0
 SOURCE AND CHARGER
 Text Notes 1595 5170 0    79   ~ 0
 NFC CONNECTOR
@@ -774,16 +716,16 @@ Wire Notes Line
 Wire Notes Line
 	3745 7795 3735 7795
 Wire Wire Line
-	1785 2325 1785 2255
+	1475 2325 1475 2255
 $Comp
 L power:+BATT #PWR029
 U 1 1 5DBF717B
-P 1785 2255
-F 0 "#PWR029" H 1785 2105 50  0001 C CNN
-F 1 "+BATT" H 1800 2428 50  0000 C CNN
-F 2 "" H 1785 2255 50  0001 C CNN
-F 3 "" H 1785 2255 50  0001 C CNN
-	1    1785 2255
+P 1475 2255
+F 0 "#PWR029" H 1475 2105 50  0001 C CNN
+F 1 "+BATT" H 1490 2428 50  0000 C CNN
+F 2 "" H 1475 2255 50  0001 C CNN
+F 3 "" H 1475 2255 50  0001 C CNN
+	1    1475 2255
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -889,9 +831,9 @@ Wire Wire Line
 	8055 5845 8055 5895
 Text Label 8055 5345 0    50   ~ 0
 LED3
-Text Label 7500 1520 0    50   ~ 0
+Text Label 7600 2020 0    50   ~ 0
 LED3
-Text Label 7500 1620 0    50   ~ 0
+Text Label 7610 2120 0    50   ~ 0
 LED2
 Wire Wire Line
 	5430 1790 5315 1790
@@ -1031,13 +973,13 @@ $EndComp
 $Comp
 L nfc_copy_cat-rescue:GND-MagSpoofTC-cache #PWR016
 U 1 1 5D10F11B
-P 9320 2420
-F 0 "#PWR016" H 9320 2170 50  0001 C CNN
-F 1 "GND" V 9325 2292 50  0000 R CNN
-F 2 "" H 9320 2420 50  0000 C CNN
-F 3 "" H 9320 2420 50  0000 C CNN
-	1    9320 2420
-	0    1    1    0   
+P 9030 2485
+F 0 "#PWR016" H 9030 2235 50  0001 C CNN
+F 1 "GND" V 9035 2357 50  0000 R CNN
+F 2 "" H 9030 2485 50  0000 C CNN
+F 3 "" H 9030 2485 50  0000 C CNN
+	1    9030 2485
+	1    0    0    -1  
 $EndComp
 Text Label 9320 2570 2    50   ~ 0
 IN_B
@@ -1052,14 +994,14 @@ F 3 "" H 9820 2370 60  0000 C CNN
 	1    9820 2370
 	1    0    0    -1  
 $EndComp
-Text Label 7500 2020 0    50   ~ 0
-MOSI
-Text Label 7500 2120 0    50   ~ 0
-SCK
-Text Label 7500 2220 0    50   ~ 0
-SS
-Text Label 7500 2320 0    50   ~ 0
-MISO
+Text Label 7560 1520 0    50   ~ 0
+MOSI1
+Text Label 7555 1620 0    50   ~ 0
+SCK1
+Text Label 7550 1720 0    50   ~ 0
+SS1
+Text Label 7550 1820 0    50   ~ 0
+MISO1
 $Comp
 L Device:C C3
 U 1 1 5E35B8A2
@@ -1092,7 +1034,7 @@ L Memory_Flash:W25Q32JVSS U5
 U 1 1 5E2FB9AC
 P 4725 5900
 F 0 "U5" H 4480 6270 50  0000 C CNN
-F 1 "W25Q16JVSS" H 5000 6300 50  0000 C CNN
+F 1 "GD25Q16C" H 5000 6300 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 4725 5900 50  0001 C CNN
 F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 4725 5900 50  0001 C CNN
 	1    4725 5900
@@ -1101,8 +1043,8 @@ $EndComp
 Connection ~ 4085 5800
 Wire Wire Line
 	3930 5800 4085 5800
-Text Label 3930 5800 0    79   ~ 0
-SS
+Text Label 3930 5800 0    50   ~ 0
+SS1
 Wire Wire Line
 	4725 6300 4725 6405
 $Comp
@@ -1147,7 +1089,7 @@ L Device:R R7
 U 1 1 5E31C604
 P 4085 5580
 F 0 "R7" H 4155 5626 50  0000 L CNN
-F 1 "100K" H 4125 5550 50  0000 L CNN
+F 1 "10K" H 4125 5550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4015 5580 50  0001 C CNN
 F 3 "~" H 4085 5580 50  0001 C CNN
 	1    4085 5580
@@ -1155,16 +1097,16 @@ F 3 "~" H 4085 5580 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4225 6000 3980 6000
-Text Label 3980 6000 0    79   ~ 0
-SCK
+Text Label 3980 6000 0    50   ~ 0
+SCK1
 Wire Wire Line
 	5225 6100 5645 6100
 Wire Wire Line
 	5225 6000 5645 6000
-Text Label 5225 5700 0    79   ~ 0
-MOSI
-Text Label 5225 5800 0    79   ~ 0
-MISO
+Text Label 5330 5700 0    50   ~ 0
+MOSI1
+Text Label 5325 5800 0    50   ~ 0
+MISO1
 $Comp
 L power:+3.3V #PWR035
 U 1 1 5E3736F6
@@ -1180,12 +1122,6 @@ Wire Wire Line
 	6105 5695 6105 5635
 Wire Wire Line
 	6105 5995 6105 6045
-Wire Wire Line
-	810  3410 1700 3410
-Connection ~ 810  3410
-Wire Wire Line
-	810  3410 810  3445
-Connection ~ 1700 3410
 Wire Wire Line
 	1700 3410 2310 3410
 NoConn ~ 2780 5960
@@ -1229,7 +1165,7 @@ L Device:C_Small C4
 U 1 1 5D11FCB0
 P 10820 2770
 F 0 "C4" H 10912 2816 50  0000 L CNN
-F 1 "0.1uf" H 10912 2725 50  0000 L CNN
+F 1 "10uf" H 10912 2725 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10820 2770 50  0001 C CNN
 F 3 "~" H 10820 2770 50  0001 C CNN
 	1    10820 2770
@@ -1241,4 +1177,54 @@ Wire Wire Line
 	10320 2420 10620 2420
 Wire Wire Line
 	10620 2420 10620 2370
+Wire Wire Line
+	5225 5700 5330 5700
+Wire Wire Line
+	5225 5800 5325 5800
+Wire Wire Line
+	7500 2020 7600 2020
+Wire Wire Line
+	7500 2120 7610 2120
+Wire Wire Line
+	7500 2220 7610 2220
+Wire Wire Line
+	7500 2320 7605 2320
+Wire Wire Line
+	7500 1520 7560 1520
+Wire Wire Line
+	7500 1620 7555 1620
+Wire Wire Line
+	9320 2420 9030 2420
+Wire Wire Line
+	9030 2420 9030 2485
+$Comp
+L nfc_copy_cat-rescue:SW_DPST_x2-Switch SW?
+U 1 1 607BCC65
+P 1930 880
+F 0 "SW?" H 1930 1115 50  0000 C CNN
+F 1 "ON/OFF" H 1930 1024 50  0000 C CNN
+F 2 "" H 1930 880 50  0001 C CNN
+F 3 "" H 1930 880 50  0001 C CNN
+	1    1930 880 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1480 880  1730 880 
+Wire Wire Line
+	2130 880  2450 880 
+Wire Wire Line
+	2450 880  2450 820 
+Wire Wire Line
+	1675 2625 1825 2625
+Wire Wire Line
+	1475 2625 1255 2625
+Wire Wire Line
+	1200 2625 1200 2550
+Connection ~ 1475 2625
+Wire Wire Line
+	1255 2725 1255 2625
+Connection ~ 1255 2625
+Wire Wire Line
+	1255 2625 1200 2625
+Connection ~ 1700 3410
 $EndSCHEMATC
