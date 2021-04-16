@@ -41,6 +41,8 @@
 #include <Wire.h>
 #include <SPI.h>
 #include <Adafruit_PN532.h>
+#include "SdFat.h"
+#include "Adafruit_SPIFlash.h"
 
 #define PN532_SCK  (17)
 #define PN532_MOSI (16)
@@ -67,6 +69,10 @@
 #define DEBUGCAT
 
 Adafruit_PN532 nfc(PN532_SCK, PN532_MISO, PN532_MOSI, PN532_SS);
+
+Adafruit_FlashTransport_SPI flashTransport(EXTERNAL_FLASH_USE_CS, EXTERNAL_FLASH_USE_SPI);
+
+Adafruit_SPIFlash flash(&flashTransport);
 
 // consts get stored in flash as we don't adjust them
 const char* tracks[] = {
@@ -98,9 +104,17 @@ void setup(){
   pinMode(MPIN, INPUT_PULLUP);
   pinMode(NPIN, INPUT_PULLUP);
 
-  Serial.begin(115200);
-  //while(!Serial){}
-  Serial.println("Hello!");
+  Serial.begin(9600);
+  while(!Serial);
+  
+  // Initialize flash library and check its chip ID.
+  if (!flash.begin()) {
+    Serial.println("Error, failed to initialize flash chip!");
+    while (1) {
+      blink(LED_BUILTIN, 600, 3);;
+    }
+  }
+  Serial.print("Flash chip JEDEC ID: 0x"); Serial.println(flash.getJEDECID(), HEX);
 
   nfc.begin();
 
