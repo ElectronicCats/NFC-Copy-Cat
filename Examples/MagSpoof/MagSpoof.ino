@@ -66,8 +66,7 @@ void setup(){
   pinMode(MPIN, INPUT_PULLUP);
     
   Serial.begin(9600);
-  //while(!Serial){}
-  Serial.println("Hello!");
+  //while(!Serial);
 
   // blink to show we started up
   blink(L1, 200, 2);
