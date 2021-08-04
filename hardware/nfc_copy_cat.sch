@@ -14,17 +14,6 @@ Comment3 "Andres Sabas"
 Comment4 "Juan Eduardo Rangel Macias "
 $EndDescr
 $Comp
-L nfc_copy_cat-rescue:USB_B_Micro-Connector J1
-U 1 1 5D106D67
-P 880 1080
-F 0 "J1" H 937 1547 50  0000 C CNN
-F 1 "USB_B_Micro" H 937 1456 50  0000 C CNN
-F 2 "Connectors:U254051N4BH806" H 1030 1030 50  0001 C CNN
-F 3 "~" H 1030 1030 50  0001 C CNN
-	1    880  1080
-	1    0    0    -1  
-$EndComp
-$Comp
 L nfc_copy_cat-rescue:GND-MagSpoofTC-cache #PWR03
 U 1 1 5D10AE94
 P 830 1580
@@ -131,13 +120,13 @@ IN_A
 $Comp
 L Device:Polyfuse F1
 U 1 1 5D119569
-P 1330 880
-F 0 "F1" V 1105 880 50  0000 C CNN
-F 1 "Polyfuse" V 1196 880 50  0000 C CNN
-F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1380 680 50  0001 L CNN
-F 3 "~" H 1330 880 50  0001 C CNN
-F 4 "MFU0805FF00500P100" V 1330 880 50  0001 C CNN "manf#"
-	1    1330 880 
+P 1355 880
+F 0 "F1" V 1130 880 50  0000 C CNN
+F 1 "Polyfuse" V 1221 880 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1405 680 50  0001 L CNN
+F 3 "~" H 1355 880 50  0001 C CNN
+F 4 "MFU0805FF00500P100" V 1355 880 50  0001 C CNN "manf#"
+	1    1355 880 
 	0    1    1    0   
 $EndComp
 Text Label 6260 4370 0    50   ~ 0
@@ -317,7 +306,7 @@ U 1 1 5D13B72D
 P 1890 3595
 F 0 "R1" H 1960 3641 50  0000 L CNN
 F 1 "1k" H 1960 3550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1820 3595 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1820 3595 50  0001 C CNN
 F 3 "~" H 1890 3595 50  0001 C CNN
 	1    1890 3595
 	1    0    0    -1  
@@ -1121,8 +1110,6 @@ F 3 "" H 1930 880 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1480 880  1730 880 
-Wire Wire Line
 	2130 880  2450 880 
 Wire Wire Line
 	2450 880  2450 820 
@@ -1386,4 +1373,19 @@ Wire Wire Line
 	7935 1790 8045 1790
 Wire Wire Line
 	7940 1660 8045 1660
+$Comp
+L nfc_copy_cat-rescue:USB_B_Micro-Connector J1
+U 1 1 5D106D67
+P 880 1080
+F 0 "J1" H 937 1547 50  0000 C CNN
+F 1 "USB_B_Micro" H 937 1456 50  0000 C CNN
+F 2 "Connectors:U254051N4BH806" H 1030 1030 50  0001 C CNN
+F 3 "~" H 1030 1030 50  0001 C CNN
+	1    880  1080
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1180 880  1205 880 
+Wire Wire Line
+	1505 880  1730 880 
 $EndSCHEMATC
