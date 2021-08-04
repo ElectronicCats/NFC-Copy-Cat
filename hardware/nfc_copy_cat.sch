@@ -222,34 +222,19 @@ F 3 "" H 3475 3045 50  0000 C CNN
 	1    3475 3045
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2955 1380 2955 1430
 $Comp
 L nfc_copy_cat-rescue:GND-MagSpoofTC-cache #PWR02
 U 1 1 5D116DE8
-P 2955 1430
-F 0 "#PWR02" H 2955 1180 50  0001 C CNN
-F 1 "GND" H 2960 1257 50  0000 C CNN
-F 2 "" H 2955 1430 50  0000 C CNN
-F 3 "" H 2955 1430 50  0000 C CNN
-	1    2955 1430
+P 600 7050
+F 0 "#PWR02" H 600 6800 50  0001 C CNN
+F 1 "GND" H 605 6877 50  0000 C CNN
+F 2 "" H 600 7050 50  0000 C CNN
+F 3 "" H 600 7050 50  0000 C CNN
+	1    600  7050
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2955 880  2955 980 
-Text Label 2955 880  1    50   ~ 0
+Text Label 1150 7000 0    50   ~ 0
 RESET
-$Comp
-L nfc_copy_cat-rescue:SW_DPST_x2-Switch SW2
-U 1 1 5D1166AC
-P 2955 1180
-F 0 "SW2" H 2955 1415 50  0000 C CNN
-F 1 "RST" H 2955 1324 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 2955 1180 50  0001 C CNN
-F 3 "~" H 2955 1180 50  0001 C CNN
-	1    2955 1180
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	4170 4010 4170 4210
 Wire Wire Line
@@ -537,64 +522,34 @@ Text Label 6260 4170 0    50   ~ 0
 SW1
 Text Label 6260 4270 0    50   ~ 0
 SW2
-Wire Wire Line
-	965  7415 915  7415
 $Comp
 L nfc_copy_cat-rescue:GND-MagSpoofTC-cache #PWR039
 U 1 1 5D38B380
-P 915 7415
-F 0 "#PWR039" H 915 7165 50  0001 C CNN
-F 1 "GND" H 920 7242 50  0000 C CNN
-F 2 "" H 915 7415 50  0000 C CNN
-F 3 "" H 915 7415 50  0000 C CNN
-	1    915  7415
-	0    1    -1   0   
+P 1545 7080
+F 0 "#PWR039" H 1545 6830 50  0001 C CNN
+F 1 "GND" H 1550 6907 50  0000 C CNN
+F 2 "" H 1545 7080 50  0000 C CNN
+F 3 "" H 1545 7080 50  0000 C CNN
+	1    1545 7080
+	-1   0    0    -1  
 $EndComp
-Text Label 1465 7415 0    50   ~ 0
+Text Label 2035 7000 0    50   ~ 0
 SW1
-$Comp
-L nfc_copy_cat-rescue:SW_DPST_x2-Switch SW3
-U 1 1 5D38B388
-P 1165 7415
-F 0 "SW3" H 1165 7650 50  0000 C CNN
-F 1 "Magspoof" H 1165 7559 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 1165 7415 50  0001 C CNN
-F 3 "~" H 1165 7415 50  0001 C CNN
-	1    1165 7415
-	-1   0    0    -1  
-$EndComp
-$Comp
-L nfc_copy_cat-rescue:SW_DPST_x2-Switch SW4
-U 1 1 5D3AF4BF
-P 2855 7425
-F 0 "SW4" H 2855 7660 50  0000 C CNN
-F 1 "NFC" H 2855 7569 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 2855 7425 50  0001 C CNN
-F 3 "~" H 2855 7425 50  0001 C CNN
-	1    2855 7425
-	-1   0    0    -1  
-$EndComp
 $Comp
 L nfc_copy_cat-rescue:GND-MagSpoofTC-cache #PWR040
 U 1 1 5D3B020B
-P 2495 7415
-F 0 "#PWR040" H 2495 7165 50  0001 C CNN
-F 1 "GND" H 2500 7242 50  0000 C CNN
-F 2 "" H 2495 7415 50  0000 C CNN
-F 3 "" H 2495 7415 50  0000 C CNN
-	1    2495 7415
-	0    1    -1   0   
+P 2430 7060
+F 0 "#PWR040" H 2430 6810 50  0001 C CNN
+F 1 "GND" H 2435 6887 50  0000 C CNN
+F 2 "" H 2430 7060 50  0000 C CNN
+F 3 "" H 2430 7060 50  0000 C CNN
+	1    2430 7060
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2655 7425 2495 7425
-Wire Wire Line
-	2495 7425 2495 7415
-Text Label 3055 7425 0    50   ~ 0
+Text Label 2920 7010 0    50   ~ 0
 SW2
 Text Label 6260 1470 0    50   ~ 0
 IRQ
-Wire Wire Line
-	1365 7415 1465 7415
 $Comp
 L Device:LED_Small D3
 U 1 1 5D36129D
@@ -1098,17 +1053,6 @@ Wire Wire Line
 	7510 5830 7220 5830
 Wire Wire Line
 	7220 5830 7220 5895
-$Comp
-L nfc_copy_cat-rescue:SW_DPST_x2-Switch SW1
-U 1 1 607BCC65
-P 1930 880
-F 0 "SW1" H 1930 1115 50  0000 C CNN
-F 1 "ON/OFF" H 1930 1024 50  0000 C CNN
-F 2 "" H 1930 880 50  0001 C CNN
-F 3 "" H 1930 880 50  0001 C CNN
-	1    1930 880 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2130 880  2450 880 
 Wire Wire Line
@@ -1166,7 +1110,7 @@ Wire Notes Line
 	5310 6630 6965 6630
 Wire Notes Line
 	6965 6630 6965 6380
-Text Notes 1385 6760 0    79   ~ 0
+Text Notes 1100 6620 0    79   ~ 0
 BUTTONS
 Wire Notes Line
 	3330 6635 3330 7775
@@ -1388,4 +1332,66 @@ Wire Wire Line
 	1180 880  1205 880 
 Wire Wire Line
 	1505 880  1730 880 
+$Comp
+L nfc_copy_cat-rescue:SW_DPST_x2-Switch SW1
+U 1 1 607BCC65
+P 1930 880
+F 0 "SW1" H 1930 1115 50  0000 C CNN
+F 1 "ON/OFF" H 1930 1024 50  0000 C CNN
+F 2 "" H 1930 880 50  0001 C CNN
+F 3 "" H 1930 880 50  0001 C CNN
+	1    1930 880 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bast_WAN-cache:Switch_SW_Push SW2
+U 1 1 610BBDBF
+P 910 7000
+F 0 "SW2" H 1010 7250 50  0000 R CNN
+F 1 "RST" H 1000 7175 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 910 7200 50  0001 C CNN
+F 3 "" H 910 7200 50  0001 C CNN
+	1    910  7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 7000 1110 7000
+Wire Wire Line
+	600  7050 600  7000
+Wire Wire Line
+	600  7000 710  7000
+$Comp
+L Bast_WAN-cache:Switch_SW_Push SW3
+U 1 1 61103185
+P 1780 7000
+F 0 "SW3" H 1880 7250 50  0000 R CNN
+F 1 "Magspoof" H 1950 7180 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 1780 7200 50  0001 C CNN
+F 3 "" H 1780 7200 50  0001 C CNN
+	1    1780 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1545 7080 1545 7000
+Wire Wire Line
+	1545 7000 1580 7000
+Wire Wire Line
+	2035 7000 1980 7000
+$Comp
+L Bast_WAN-cache:Switch_SW_Push SW4
+U 1 1 61120039
+P 2670 7010
+F 0 "SW4" H 2770 7260 50  0000 R CNN
+F 1 "NFC" H 2755 7185 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 2670 7210 50  0001 C CNN
+F 3 "" H 2670 7210 50  0001 C CNN
+	1    2670 7010
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2430 7060 2430 7010
+Wire Wire Line
+	2430 7010 2470 7010
+Wire Wire Line
+	2870 7010 2920 7010
 $EndSCHEMATC
