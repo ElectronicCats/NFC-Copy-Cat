@@ -439,6 +439,23 @@ X B 4 200 0 100 L 50 50 2 1 I
 ENDDRAW
 ENDDEF
 #
+# nfc_copy_cat-rescue_Switch_SW_Push-Bast_WAN-cache
+#
+DEF nfc_copy_cat-rescue_Switch_SW_Push-Bast_WAN-cache SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "nfc_copy_cat-rescue_Switch_SW_Push-Bast_WAN-cache" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
 # nfc_copy_cat-rescue_TC4424-MagSpoofTC-cache
 #
 DEF nfc_copy_cat-rescue_TC4424-MagSpoofTC-cache U 0 40 Y Y 1 F N
