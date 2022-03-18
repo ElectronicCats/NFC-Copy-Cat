@@ -2553,7 +2553,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 008da5b9-6f95-4113-b7d0-d93ac62efd33)
   )
-  (label "ON" (at 56.007 22.352 0)
+  (label "ON" (at 42.291 66.802 0)
     (effects (font (size 2.0066 2.0066)) (justify left bottom))
     (uuid 051b8cb0-ae77-4e09-98a7-bf2103319e66)
   )
