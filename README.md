@@ -29,6 +29,13 @@ Some of the code examples that will be available introduce different concepts. F
   <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" width="200" height="104" />
 </a>
 
+## Wiki and Getting Started
+[Getting Started in our Wiki](https://github.com/ElectronicCats/NFC-Copy-Cat/wiki)
+
+<img src="https://raw.githubusercontent.com/wiki/ElectronicCats/NFC-Copy-Cat/assets/NFC-Copy-Cat1.PNG"  width="400" height="208"/>
+
+
+
 # DISCLAIMER
 T
 he NFC Copy Cat is a wireless penetration testing tool for use in authorized security audits where permitted. Check laws and obtain permission before using. Electronic Cats and Salvador Mendoza claim no responsibility for unauthorized use or damages.
