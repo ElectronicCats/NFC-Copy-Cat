@@ -34,17 +34,17 @@ Some of the code examples that will be available introduce different concepts. F
 
 <img src="https://raw.githubusercontent.com/wiki/ElectronicCats/NFC-Copy-Cat/assets/NFC-Copy-Cat1.PNG"  width="400" height="208"/>
 
+## Disclaimer
+NFC Copy Cat is a wireless penetration testing tool intended solely for use in authorized security audits, where such usage is permitted by applicable laws and regulations. Before utilizing this tool, it is crucial to ensure compliance with all relevant legal requirements and obtain appropriate permissions from the relevant authorities.
 
+It is essential to note that the board does not provide any means or authorization to utilize credit cards or engage in any financial transactions that are not legally authorized. Electronic Cats holds no responsibility for any unauthorized use of the tool or any resulting damages.
 
-# DISCLAIMER
-The NFC Copy Cat is a wireless penetration testing tool for use in authorized security audits where permitted. Check laws and obtain permission before using. Electronic Cats and Salvador Mendoza claim no responsibility for unauthorized use or damages.
+## License
+![OpenSourceLicense](https://github.com/ElectronicCats/AjoloteBoard/raw/master/OpenSourceLicense.png)
 
 Electronic Cats invests time and resources providing this open source design, please support Electronic Cats and open-source hardware by purchasing products from Electronic Cats!
 
 Designed by Electronic Cats.
-
-## License
-![OpenSourceLicense](https://github.com/ElectronicCats/AjoloteBoard/raw/master/OpenSourceLicense.png)
 
 Firmware released under an GNU AGPL v3.0 license. See the LICENSE file for more information.
 
